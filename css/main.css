@@ -1,0 +1,692 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Open-sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 124.6rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+header {
+  height: 6.4rem;
+  padding: 1.6rem 0;
+}
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .container nav ul li:not(:last-child) {
+  margin-right: 3.6rem;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: -0.02em;
+  color: #495057;
+}
+header .container .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+header .container .login .btn-large {
+  width: 17.2rem;
+  height: 3.6rem;
+  background-color: #343A40;
+  border-radius: 12.8rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  margin-right: 3.1rem;
+}
+header .container .login .btn-large:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+header .container .login .btn-small-logar {
+  width: 3.6rem;
+  height: 3.6rem;
+  margin-right: 1.6rem;
+  border: 1px solid #ADB5BD;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+header .container .login .btn-small-logar:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+header .container .login .btn-small-comprar {
+  width: 3.6rem;
+  height: 3.6rem;
+  border: 1px solid #ADB5BD;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+header .container .login .btn-small-comprar:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+@media (max-width: 800px) {
+  header .container nav {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  header .container .login .btn-large {
+    display: none;
+  }
+}
+
+.s-hero {
+  background: url(../img/bg.jpg) no-repeat center;
+  background-size: cover;
+  height: 54.7rem;
+}
+.s-hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 7.1rem;
+}
+.s-hero .container .title-area h1 {
+  font-weight: 700;
+  font-size: 7.2rem;
+  line-height: 9.8rem;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+.s-hero .container .title-area .values {
+  margin-top: 2.5rem;
+  margin-bottom: 3.6rem;
+}
+.s-hero .container .title-area .values span {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  text-decoration: line-through;
+  -webkit-text-decoration-color: #FFEA0D;
+  text-decoration-color: #FFEA0D;
+}
+.s-hero .container .title-area .values h2 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 76px;
+  letter-spacing: -0.02em;
+  color: #FFE211;
+}
+.s-hero .container .title-area .values p {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  margin-bottom: 1.6rem;
+}
+.s-hero .container .title-area .values img {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.s-hero .container .title-area .lower-area .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.3rem;
+}
+.s-hero .container .title-area .lower-area .buttons button {
+  width: 22.8rem;
+  height: 4.8rem;
+  background-color: #FFFFFF;
+  border-radius: 12rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.02em;
+  color: #F22824;
+  margin-right: 6.9rem;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.s-hero .container .title-area .lower-area .buttons button:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.s-hero .container .title-area .lower-area .buttons .exclusive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.s-hero .container .title-area .lower-area .buttons .exclusive a {
+  margin-top: 1.5rem;
+}
+.s-hero .container .title-area .lower-area .buttons .exclusive a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #FFFFFF;
+  text-decoration-color: #FFFFFF;
+  text-decoration-thickness: 2px;
+}
+.s-hero .container .title-area .lower-area .buttons .exclusive a span {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.9);
+}
+.s-hero .container .title-area .lower-area span {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+.s-hero .container .center-area .off {
+  width: 10.4rem;
+  height: 10.4rem;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFEA0D), to(#FFC120));
+  background-image: linear-gradient(180deg, #FFEA0D 0%, #FFC120 100%);
+  -webkit-box-shadow: 0px 4px 10px rgba(66, 23, 29, 0.1);
+  box-shadow: 0px 4px 10px rgba(66, 23, 29, 0.1);
+  z-index: 2023;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  right: 82rem;
+}
+.s-hero .container .center-area .off span {
+  font-size: 1.6rem;
+  line-height: 131.68%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #343A40;
+  position: absolute;
+}
+.s-hero .container .center-area .off span strong {
+  font-weight: 800;
+}
+.s-hero .container .center-area .calculator img {
+  position: absolute;
+  bottom: 21.5rem;
+  right: 55rem;
+  z-index: 2022;
+}
+.s-hero .container .center-area .quadrados img {
+  position: absolute;
+  top: 151px;
+  right: 58.5rem;
+  z-index: 2021;
+}
+.s-hero .container .beneficios {
+  position: relative;
+}
+.s-hero .container .beneficios .text-area h3 {
+  font-weight: 800;
+  font-size: 4.8rem;
+  line-height: 6.5rem;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+.s-hero .container .beneficios .text-area h4 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  max-width: 12.8rem;
+}
+.s-hero .container .beneficios .text-area ul {
+  margin-top: 3.4rem;
+  padding-left: 1.9rem;
+  margin-bottom: 3.7rem;
+}
+.s-hero .container .beneficios .text-area ul li {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+.s-hero .container .beneficios .text-area ul li:before {
+  content: "•";
+  color: #FFEA0D;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.s-hero .container .beneficios .text-area ul li:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+.s-hero .container .beneficios .darker-area {
+  width: 27.8rem;
+  height: 15.6rem;
+  position: absolute;
+  bottom: -6.5rem;
+  right: 1rem;
+  background-color: rgba(151, 35, 58, 0.3);
+  border-top-right-radius: 30px;
+}
+.s-hero .container .beneficios .darker-area .receba {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 6rem;
+  padding-top: 4.4rem;
+}
+.s-hero .container .beneficios .darker-area .receba img {
+  margin-right: 1.1rem;
+}
+.s-hero .container .beneficios .darker-area .receba p {
+  max-width: 11.6rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 1200px) {
+  .s-hero .container .title-area h1 {
+    font-size: 6.5rem;
+  }
+  .s-hero .container .title-area .lower-area .buttons button {
+    margin-right: 3.9rem;
+  }
+  .s-hero .container .center-area .off {
+    right: 48rem;
+  }
+  .s-hero .container .center-area .calculator img {
+    right: 23rem;
+    bottom: 5.5rem;
+  }
+  .s-hero .container .center-area .quadrados img {
+    right: 26.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .s-hero .container .center-area {
+    display: none;
+  }
+  .s-hero .container .beneficios .darker-area {
+    width: 22.8rem;
+    height: 13.6rem;
+    right: -2rem;
+    border-top-left-radius: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .s-hero {
+    height: auto;
+  }
+  .s-hero .container {
+    padding-top: 3.1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .s-hero .container .title-area {
+    text-align: center;
+  }
+  .s-hero .container .title-area .values {
+    margin-bottom: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .s-hero .container .title-area .values img {
+    display: none;
+  }
+  .s-hero .container .title-area .lower-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .s-hero .container .title-area .lower-area .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .s-hero .container .title-area .lower-area .buttons button {
+    margin: 0 auto 1rem auto !important;
+  }
+  .s-hero .container .title-area .lower-area .buttons .exclusive {
+    margin: 1rem auto 0 auto;
+  }
+  .s-hero .container .beneficios {
+    margin-top: 3rem;
+  }
+  .s-hero .container .beneficios .text-area {
+    text-align: center;
+  }
+  .s-hero .container .beneficios .text-area h4 {
+    max-width: 100%;
+  }
+  .s-hero .container .beneficios .text-area ul {
+    max-width: 40rem;
+  }
+  .s-hero .container .beneficios .text-area ul li br {
+    display: none;
+  }
+  .s-hero .container .beneficios .darker-area {
+    display: none;
+  }
+}
+
+.s-howTo {
+  padding-top: 6.4rem;
+  padding-bottom: 5rem;
+}
+.s-howTo .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.s-howTo .container .left-area {
+  margin-right: 8.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.s-howTo .container .left-area .text {
+  margin-right: 6.1rem;
+}
+.s-howTo .container .left-area .text h3 {
+  font-weight: 800;
+  font-size: 4.8rem;
+  line-height: 6.5rem;
+  letter-spacing: -0.02em;
+  color: #DC292E;
+}
+.s-howTo .container .left-area .text span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.02em;
+  color: #343A40;
+}
+.s-howTo .container .left-area .text p {
+  max-width: 8.7rem;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  letter-spacing: -0.02em;
+  color: #495057;
+}
+.s-howTo .container .como-aproveitar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border-bottom: 1px solid red;
+  padding-bottom: 8.1rem;
+}
+.s-howTo .container .como-aproveitar h4 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #495057;
+  margin-right: 10.9rem;
+}
+.s-howTo .container .como-aproveitar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.s-howTo .container .como-aproveitar ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 20rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.s-howTo .container .como-aproveitar ul li:not(:last-child) {
+  margin-right: 4rem;
+}
+.s-howTo .container .como-aproveitar ul li .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+.s-howTo .container .como-aproveitar ul li .item img {
+  max-width: 4.8rem;
+  max-height: 4.8rem;
+  margin: 0 auto 1.8rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.s-howTo .container .como-aproveitar ul li .item span {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #495057;
+}
+.s-howTo .container .como-aproveitar ul li .img-maior {
+  height: 1.6rem;
+}
+@media (max-width: 1200px) {
+  .s-howTo {
+    padding-top: 10rem;
+  }
+}
+@media (max-width: 800px) {
+  .s-howTo {
+    padding-top: 3rem;
+  }
+  .s-howTo .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .s-howTo .container .left-area {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
+  .s-howTo .container .left-area .marcador {
+    display: none;
+  }
+  .s-howTo .container .left-area .text {
+    margin: 0 auto;
+  }
+  .s-howTo .container .como-aproveitar ul li:not(:last-child) {
+    margin-right: 2rem;
+  }
+  .s-howTo .container .como-aproveitar ul li .item {
+    margin-right: 4rem;
+  }
+}
+@media (max-width: 600px) {
+  .s-howTo .container .left-area .text {
+    text-align: center;
+  }
+  .s-howTo .container .left-area .text h2 {
+    font-size: 5.5rem;
+  }
+  .s-howTo .container .left-area .text span {
+    font-size: 2.5rem;
+  }
+  .s-howTo .container .left-area .text p {
+    margin-top: 1rem;
+    max-width: unset;
+    font-size: 2rem;
+  }
+  .s-howTo .container .como-aproveitar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .s-howTo .container .como-aproveitar h4 {
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+  .s-howTo .container .como-aproveitar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .s-howTo .container .como-aproveitar ul li {
+    width: 100%;
+  }
+  .s-howTo .container .como-aproveitar ul li:not(:last-child) {
+    margin-right: 0;
+  }
+  .s-howTo .container .como-aproveitar ul li .item {
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .s-howTo .container .como-aproveitar ul li:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .s-howTo .container .como-aproveitar ul li img {
+    display: none;
+  }
+}

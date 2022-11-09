@@ -1,0 +1,93 @@
+header {
+  height: 6.4rem;
+  padding: 1.6rem 0;
+ 
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    nav {
+      ul {
+        display: flex;
+        li {
+          &:not(:last-child) {
+            margin-right: 3.6rem;
+          }
+          a {
+            text-decoration: none;            
+            font-size: 1.3rem;
+            line-height: 1.8rem;            
+            letter-spacing: -0.02em;
+            color: $neutral-200;            
+          }
+        }
+      }
+    }
+    .login {
+      display: flex;
+      align-items: center;
+      .btn-large {
+        width: 17.2rem;
+        height: 3.6rem;
+        background-color: $neutral-100;
+        border-radius: 12.8rem;
+        font-weight: 600;
+        font-size: 1.3rem;        
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        transition: transform .3s ease;
+        margin-right: 3.1rem;        
+        &:hover {
+          transform: scale(1.1);
+        }        
+      }
+      .btn-small-logar{
+        width: 3.6rem;
+        height: 3.6rem;
+        margin-right: 1.6rem;
+        border: 1px solid #ADB5BD;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform .3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      .btn-small-comprar {
+        width: 3.6rem;
+        height: 3.6rem;        
+        border: 1px solid #ADB5BD;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform .3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      
+    }
+  }
+
+  @include responsive(800px) {
+    .container {
+      nav {
+        display: none;
+      }
+    }
+  }
+  @include responsive(600px) {
+    .container {
+      .login {
+        .btn-large {
+          display: none;
+        }
+      }
+    }
+  }
+}
